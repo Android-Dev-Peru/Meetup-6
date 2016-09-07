@@ -11,9 +11,11 @@ Meetup #6 Kotlin &amp; Android
 ### Taller :
 
 - Lenguaje Kotlin
+
   Aprenderemos el lenguaje Kotlin con ejemplos y pequeñas katas.
 
 - Kotlin para el desarrollo Android
+
   Haremos un ejemplo en Android en java y lo  convertiremos  a Kotlin.
 
 ### Referencia :
