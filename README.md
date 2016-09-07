@@ -3,7 +3,8 @@ Meetup #6 Kotlin &amp; Android
 
 ### Requisitos :
 
-- Android Studio 2.1.2 o Intellij IDEA
+- Android Studio 2.1.2 [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html) o Intellij IDEA [https://www.jetbrains.com/idea/#chooseYourEdition](https://www.jetbrains.com/idea/#chooseYourEdition)
+  
 - OS Linux, OSX, Windows
 - Revisar la documentación oficial [https://kotlinlang.org/](https://kotlinlang.org/)
 - Compilador Online [link](http://try.kotlinlang.org/#/Examples/Hello,%20world!/Simplest%20version/Simplest%20version.kt) 
