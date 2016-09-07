@@ -18,7 +18,7 @@ Meetup #6 Kotlin &amp; Android
   Aprenderemos el lenguaje Kotlin con ejemplos y pequeñas katas.
   
   * FizzBuzz Kata [https://github.com/Android-Dev-Peru/Meetup-6/blob/master/Fizzbuzz-Kata.md](https://github.com/Android-Dev-Peru/Meetup-6/blob/master/Fizzbuzz-Kata.md)
-  * Coffee Machine Kata [https://github.com/iyubinest/CoffeMachineKotlin](https://github.com/iyubinest/CoffeMachineKotlin)
+  * Coffe Machine Kata [https://github.com/iyubinest/CoffeMachineKotlin](https://github.com/iyubinest/CoffeMachineKotlin)
 
 - Kotlin para el desarrollo Android
 
