@@ -9,6 +9,7 @@ Meetup #6 Kotlin &amp; Android
 - Revisar la documentación oficial [https://kotlinlang.org/](https://kotlinlang.org/)
 - Compilador Online [link](http://try.kotlinlang.org/#/Examples/Hello,%20world!/Simplest%20version/Simplest%20version.kt) 
 - Configurar tu entorno de desarrollo [https://kotlinlang.org/docs/tutorials/getting-started.html](https://kotlinlang.org/docs/tutorials/getting-started.html)
+- Revisar los ejemplos [https://github.com/JetBrains/kotlin-examples](https://github.com/JetBrains/kotlin-examples)
 
 ### Taller :
 
