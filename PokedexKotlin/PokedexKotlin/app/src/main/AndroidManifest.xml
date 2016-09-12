@@ -15,8 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PokedexKotlinActivity" />
-        <activity android:name=".PokedexActivity"></activity>
+        <activity android:name=".PokedexKotlinActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".PokedexActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
