@@ -19,6 +19,7 @@ Meetup #6 Kotlin &amp; Android
   
   * FizzBuzz Kata [https://github.com/Android-Dev-Peru/Meetup-6/blob/master/Fizzbuzz-Kata.md](https://github.com/Android-Dev-Peru/Meetup-6/blob/master/Fizzbuzz-Kata.md)
   * Coffe Machine Kata [https://github.com/iyubinest/CoffeMachineKotlin](https://github.com/iyubinest/CoffeMachineKotlin)
+  * Kata con números.
 
 - Kotlin para el desarrollo Android
 
