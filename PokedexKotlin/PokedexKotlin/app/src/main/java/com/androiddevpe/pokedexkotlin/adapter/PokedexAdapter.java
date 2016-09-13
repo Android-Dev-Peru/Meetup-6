@@ -1,5 +1,9 @@
 package com.androiddevpe.pokedexkotlin.adapter;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +16,8 @@ import android.widget.TextView;
 import com.androiddevpe.pokedexkotlin.R;
 import com.androiddevpe.pokedexkotlin.model.Pokemon;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -19,6 +25,7 @@ import java.util.List;
  */
 public class PokedexAdapter extends RecyclerView.Adapter<PokedexAdapter.ViewHolder> {
     private List<Pokemon> pokemonList;
+    private Context context;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -37,7 +44,8 @@ public class PokedexAdapter extends RecyclerView.Adapter<PokedexAdapter.ViewHold
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public PokedexAdapter(List<Pokemon> pokemonList) {
+    public PokedexAdapter(Context context,List<Pokemon> pokemonList) {
+        this.context= context;
         this.pokemonList = pokemonList;
     }
 
@@ -60,11 +68,26 @@ public class PokedexAdapter extends RecyclerView.Adapter<PokedexAdapter.ViewHold
         // - replace the contents of the view with that element
         Pokemon pokemon= pokemonList.get(position);
         holder.tviName.setText(pokemon.getName());
+        holder.iviPhoto.setImageBitmap(getBitmapFromAssets(pokemon.getPhoto()));
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return pokemonList.size();
+    }
+
+    public Bitmap getBitmapFromAssets(String fileName) {
+        AssetManager assetManager = context.getAssets();
+
+        InputStream istr = null;
+        try {
+            istr = assetManager.open(fileName);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Bitmap bitmap = BitmapFactory.decodeStream(istr);
+
+        return bitmap;
     }
 }

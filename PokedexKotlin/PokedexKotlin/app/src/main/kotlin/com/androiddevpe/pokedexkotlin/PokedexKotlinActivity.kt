@@ -37,38 +37,65 @@ class PokedexKotlinActivity : AppCompatActivity() {
     private fun loadData(){
         val pokemonKt:PokemonKt= PokemonKt()
         pokemonKt.name= "Abra"
+        pokemonKt.photo= "images/Abra.png"
 
         val pokemonKt1:PokemonKt= PokemonKt()
         pokemonKt1.name= "Arcanine"
+        pokemonKt1.photo= "images/Arcanine.png"
 
         var pokemonKt2:PokemonKt= PokemonKt()
         pokemonKt2.name= "Bulbasaur"
+        pokemonKt2.photo= "images/Bulbasaur.png"
 
         val pokemonKt3:PokemonKt= PokemonKt()
         pokemonKt3.name= "Caterpie"
+        pokemonKt3.photo= "images/Caterpie.png"
 
         val pokemonKt4:PokemonKt= PokemonKt()
         pokemonKt4.name= "Drowzee"
+        pokemonKt4.photo= "images/Drowzee.png"
 
         val pokemon5 = PokemonKt()
         pokemon5.name = "Exeggcute"
+        pokemon5.photo= "images/Exeggcute.png"
 
         val pokemon6 = PokemonKt()
         pokemon6.name = "Golem"
+        pokemon6.photo= "images/Golem.png"
 
         val pokemon7 = PokemonKt()
         pokemon7.name = "Lickitung"
+        pokemon7.photo= "images/Lickitung.png"
 
         val pokemon8 = PokemonKt()
         pokemon8.name = "Magmar"
+        pokemon8.photo= "images/Magmar.png"
 
         val pokemon9 = PokemonKt()
         pokemon9.name = "Nidorino"
+        pokemon9.photo= "images/Nidorino.png"
+
+        val pokemon10 = PokemonKt()
+        pokemon10.name = "Pikachu"
+        pokemon10.photo= "images/Pikachu.png"
+
+        val pokemon11 = PokemonKt()
+        pokemon11.name = "Ponyta"
+        pokemon11.photo= "images/Ponyta.png"
+
+        val pokemon12 = PokemonKt()
+        pokemon12.name = "Psyduck"
+        pokemon12.photo= "images/Psyduck.png"
+
+        val pokemon13 = PokemonKt()
+        pokemon13.name = "Vaporeon"
+        pokemon13.photo = "images/Vaporeon.png"
 
         pokemonList= listOf(pokemonKt,pokemonKt1,pokemonKt2,pokemonKt3,pokemonKt4,
-                pokemon5,pokemon6,pokemon7,pokemon8,pokemon9)
+                pokemon5,pokemon6,pokemon7,pokemon8,pokemon9,
+                pokemon10, pokemon11,pokemon12,pokemon13)
         //TODO method add
-        mAdapter= PokedexKtAdapter(pokemonList)
+        mAdapter= PokedexKtAdapter(pokemonList,this)
 
         mRecyclerView.setAdapter(mAdapter)
     }

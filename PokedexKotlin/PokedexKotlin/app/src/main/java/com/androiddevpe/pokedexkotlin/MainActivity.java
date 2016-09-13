@@ -7,8 +7,8 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private View tviPJava;
-    private View tviKotlin;
+    private View iviPJava;
+    private View iviPKotlin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,21 +18,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void ui() {
-        tviPJava= findViewById(R.id.tviPJava);
-        tviKotlin= findViewById(R.id.tviPKotlin);
+        iviPJava= findViewById(R.id.iviPJava);
+        iviPKotlin= findViewById(R.id.iviPKotlin);
 
-        tviPJava.setOnClickListener(this);
-        tviKotlin.setOnClickListener(this);
+        iviPJava.setOnClickListener(this);
+        iviPKotlin.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.tviPJava:
+            case R.id.iviPJava:
                     gotoPokedexJava();
                 break;
 
-            case R.id.tviPKotlin:
+            case R.id.iviPKotlin:
                     gotoPokedexKotlin();
                 break;
         }
