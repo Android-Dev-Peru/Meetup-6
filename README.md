@@ -24,6 +24,7 @@ Meetup #6 Kotlin &amp; Android
 - Kotlin para el desarrollo Android
 
   Haremos un ejemplo en Android con java y lo  convertiremos  a Kotlin.
+  Pokedex Kotlin [link](https://github.com/Android-Dev-Peru/Meetup-6/tree/master/PokedexKotlin)
 
 ### Referencia :
 
